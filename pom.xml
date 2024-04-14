@@ -7,7 +7,7 @@
 
 	<name>test-pubblicazione-1</name>
 	<description>Test pubblicazione sonatype 1</description>
-	<version>0.1.0</version>
+	<version>${revision}</version>
 
 	<licenses>
 		<license>
@@ -39,6 +39,7 @@
 		<lombok-version>1.18.32</lombok-version>
 		<lombok-maven-plugin-version>1.18.20.0</lombok-maven-plugin-version>
 		<delombok-output-dir>${project.build.directory}/generated-sources/delombok</delombok-output-dir>
+		<revision>0.2.0</revision>
 	</properties>	
 
 	<organization>
