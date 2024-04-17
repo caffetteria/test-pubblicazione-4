@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.github.caffetteria</groupId>
-	<artifactId>test-pubblicazione-1</artifactId>
+	<artifactId>test-pubblicazione-4</artifactId>
 
 	<name>test-pubblicazione-1</name>
-	<description>Test pubblicazione sonatype 1</description>
-	<version>${revision}</version>
+	<description>Test pubblicazione sonatype 4</description>
+	<version>0.1.0</version>
 
 	<licenses>
 		<license>
