@@ -40,7 +40,7 @@
 		<lombok-version>1.18.32</lombok-version>
 		<lombok-maven-plugin-version>1.18.20.0</lombok-maven-plugin-version>
 		<delombok-output-dir>${project.build.directory}/generated-sources/delombok</delombok-output-dir>
-		<revision>0.2.0</revision>
+		<revision>0.3.0</revision>
 	</properties>	
 
 	<organization>
