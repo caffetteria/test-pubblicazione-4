@@ -7,7 +7,7 @@
 
 	<name>test-pubblicazione-1</name>
 	<description>Test pubblicazione sonatype 4</description>
-	<version>0.1.0</version>
+	<version>${revision}</version>
 
 	<licenses>
 		<license>
@@ -35,6 +35,7 @@
 		<mvn-compiler-version>3.12.1</mvn-compiler-version>
 		<mvn-source-version>3.3.0</mvn-source-version>
 		<mvn-javadoc-version>3.6.3</mvn-javadoc-version>
+		<mvn-flatten-version>1.6.0</mvn-flatten-version>
 		<!-- lombok maven -->
 		<lombok-version>1.18.32</lombok-version>
 		<lombok-maven-plugin-version>1.18.20.0</lombok-maven-plugin-version>
@@ -149,6 +150,32 @@
 	<build>
 
 		<plugins>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>flatten-maven-plugin</artifactId>
+				<version>${mvn-flatten-version}</version>
+				<configuration>
+					<updatePomFile>true</updatePomFile>
+					<flattenMode>resolveCiFriendliesOnly</flattenMode>
+				</configuration>
+				<executions>
+					<execution>
+						<id>flatten</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>flatten</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>flatten.clean</id>
+						<phase>clean</phase>
+						<goals>
+							<goal>clean</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
